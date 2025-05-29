@@ -1,25 +1,21 @@
 'use client';
 import Image from 'next/image';
-// import { useEffect } from 'react';
+
 
 export default function About() {
   return (
     <div id='about' className="relative flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-5 md:px-12 py-20 bg-gradient-to-r from-white to-green-50 overflow-hidden -mt-10 bg-cover bg-center  text-center max-w-screen-2xl mx-auto"
     >
 
-      {/* Left Side: Chef Image with orbiting icons */}
       <div className="relative w-[280px] h-[280px] md:w-[470px] md:h-[470px] rounded-full    overflow-hidden">
-        
-        {/* Background Image */}
+
         <Image src="/cbg.png" alt="Background" fill className="object-cover" />
 
-        {/* Chef Image */}
         <div className="absolute inset-0 z-10 flex items-center justify-center">
           <Image src="/shf.png" alt="Chef" fill className="object-contain" />
         </div>
       </div>
 
-      {/* Right Side: Text Content */}
       <div className="text-center md:text-left max-w-xl py-10 ">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-relaxed">
           Always ready to <br />
@@ -29,7 +25,6 @@ export default function About() {
           Your Doorway To Wholesome Goodness. Enjoy Fresh, Nutritious Meals Delivered Right To Your Doorstep. Elevate Your Health With Every Bite – Hassle-Free!
         </p>
 
-        {/* Features */}
         <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-6">
           <div className="flex items-center gap-2">
             <Image src="/on.png" alt="Order" width={24} height={24} />
@@ -41,7 +36,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Call-to-Action Button */}
+
         <div className="mt-8">
           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 shadow-lg">
             Order Now

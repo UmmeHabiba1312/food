@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
-// ✅ Define a proper type for the item
+
 interface MenuItem {
   id: string;
   title: string;
@@ -77,7 +77,7 @@ export default function MenuSection() {
     },
   ];
 
-  // ✅ Use correct type for item
+
   const handleAddToCart = (item: MenuItem) => {
     const query = new URLSearchParams({
       title: item.title,
@@ -151,9 +151,6 @@ export default function MenuSection() {
         ))}
       </div>
 
-      {/* <button className="mt-10 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
-        See All
-      </button> */}
     </div>
   );
 }

@@ -1,4 +1,3 @@
-// app/cart/CartContent.tsx
 "use client";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -46,18 +45,18 @@ export default function CartContent() {
   return (
     <main className="bg-white p-5 min-h-screen max-w-screen-2xl mx-auto">
       <div className="container mx-auto px-6 py-12 bg-white mt-16 flex flex-col md:flex-row gap-12">
-        {/* Left Image */}
+
         <div className="relative w-full md:w-1/2 h-96 rounded-xl overflow-hidden shadow-lg">
           <Image src={image} alt={title} fill className="object-cover" priority />
         </div>
 
-        {/* Right Details */}
+
         <div className="md:w-1/2 flex flex-col justify-center space-y-5">
           <h1 className="text-4xl font-extrabold text-gray-900">{title}</h1>
           <p className="text-gray-400 text-base leading-relaxed tracking-wide">{description}</p>
           <p className="text-2xl text-green-600 font-extrabold">${price.toFixed(2)}</p>
 
-          {/* Size of Crust */}
+
           <div>
             <p className="font-semibold text-gray-800 mb-3 text-base">Size Of Crust</p>
             <div className="flex gap-5">
@@ -77,7 +76,7 @@ export default function CartContent() {
             </div>
           </div>
 
-          {/* Quantity & Add to Cart */}
+
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:gap-6">
             <div>
               <p className="font-semibold text-gray-800 mb-3 text-base">Quantity</p>

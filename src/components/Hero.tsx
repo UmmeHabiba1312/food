@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="herosection" className="bg-green-600 mt-7 text-white py-16 px-5 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-screen-2xl mx-auto ">
       
-      {/* Left Text Side */}
+
       <div className="space-y-6">
         <p className="text-yellow-400 font-medium"> Happy Healthy Eating</p>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -31,21 +31,20 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right Image Side */}
    <div className="relative w-full flex  justify-center items-center">
-  {/* Main Image */}
+
   <Image
-    src="/hro.PNG"
+    src="/hro.png"
     alt="Food Plate"
     width={500}
     height={500}
     className="rounded-full z-0 "
   />
 
-  {/* Steaks Label - Bottom Left */}
+
   <div className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
     <Image
-      src="/stk.PNG"
+      src="/stk.png"
       alt="Steak"
       width={40}
       height={30}
@@ -58,7 +57,7 @@ export default function Hero() {
     </div>
   </div>
 
-  {/* Delivery Guy Label - Top Right */}
+
   <div className="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
     <Image
       src="/fd.png"

@@ -24,7 +24,7 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="bg-gradient-to-r from-white to-green-50  py-20 px-5 max-w-screen-2xl mx-auto md:px-12 relative overflow-hidden">
-      {/* Header */}
+
       <div className="text-center mb-10">
         <p className="text-green-600 text-2xl font-semibold uppercase tracking-wide mb-2">How It Works</p>
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -35,7 +35,7 @@ export default function HowItWorks() {
 
    
 
-      {/* Steps */}
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
         {steps.map((step, index) => (
           <div

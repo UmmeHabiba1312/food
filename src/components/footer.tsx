@@ -6,7 +6,7 @@ export default function Footer() {
     <footer id="contact" className="bg-[#081B18] text-white px-5 md:px-12 py-16 rounded-t-3xl max-w-screen-2xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-        {/* Logo & Tagline */}
+
         <div>
           <h2 className=" mb-3">
           <Link href="#"><Image src="/logo.png" alt="Logo" width={60} height={50} className="object-contain" /></Link>
@@ -16,7 +16,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Contact Info */}
         <div>
           <h4 className="text-xl font-semibold mb-4 tracking-wider leading-relaxed">Contact Us</h4>
           <ul className="space-y-4 text-sm text-gray-300">
@@ -35,7 +34,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Newsletter */}
         <div>
           <h4 className="text-xl font-semibold mb-3  tracking-wider leading-relaxed">Never Miss a Recipe</h4>
           <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -54,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+
       <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-md text-gray-400">
         <p>© {new Date().getFullYear()} TastyTray. All rights reserved.</p>
         <div className="flex gap-5 mt-3 md:mt-0 text-2xl">

@@ -11,21 +11,21 @@ const testimonials = [
     age: "22 Years",
     review:
       "Fresh Feast has truly revolutionized my approach to eating healthy! Their diverse menu options make it easy to find something delicious and nutritious every time",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "/testimon1.jpg",
   },
   {
     name: "David Ken",
     age: "24 Years",
     review:
       "I can't thank Fresh Feast enough for simplifying my busy lifestyle. With their meals, I no longer have to sacrifice health for convenience. Highly recommend!",
-    image: "https://randomuser.me/api/portraits/men/22.jpg",
+    image: "/testimon2.jpg",
   },
   {
     name: "Jennifer Sim",
     age: "21 Years",
     review:
       "Fresh Feast has become my go-to solution for nutritious meals with incredible taste. As someone with dietary restrictions, I appreciate the variety and clarity of their menu.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    image: "/testimon3.jpg",
   },
 ];
 

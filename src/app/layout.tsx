@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tasty Tray",
-  description: "This a food delivery app. You can order food and get it delivered to your doorstep.",
+  description: "This a food delivery web app. You can order food and get it delivered to your doorstep.",
 };
 
 export default function RootLayout({

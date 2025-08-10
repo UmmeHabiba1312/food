@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from '@/components/Navbar';
 import Footer from '@/components/footer';
 import { Toaster } from 'react-hot-toast';
-
+import { ClerkProvider } from "@clerk/nextjs";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,6 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
       
@@ -36,5 +37,6 @@ export default function RootLayout({
         <Footer/>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

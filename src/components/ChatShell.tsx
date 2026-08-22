@@ -75,7 +75,7 @@ const handleOrder = async (orderText: string) => {
   }
   setIsTyping(true);
   try {
-    const response = await fetch("https://https://tasty-tary-backend-black.vercel.app/chat/start", {
+    const response = await fetch("https://tasty-tary-backend-black.vercel.app/chat/start", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

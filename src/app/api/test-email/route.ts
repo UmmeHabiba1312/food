@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function GET(req: Request) {
+export async function GET() {
   const email = 'test@example.com';
   const order = 'Order #123';
 
@@ -25,5 +25,9 @@ export async function GET(req: Request) {
   console.log('Message sent: %s', info.messageId);
   console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-  return NextResponse.json({ success: true, message: 'Email sent', preview: nodemailer.getTestMessageUrl(info) });
+  return NextResponse.json({
+    success: true,
+    message: 'Email sent',
+    preview: nodemailer.getTestMessageUrl(info),
+  });
 }
